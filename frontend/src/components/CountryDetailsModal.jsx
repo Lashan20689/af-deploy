@@ -14,7 +14,7 @@ const CountryDetailsModal = ({ code, onClose }) => {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
-      <div className="bg-white dark:bg-gray-900 rounded-xl shadow-2xl p-8 w-full max-w-lg relative animate-fadeIn">
+      <div className="bg-white rounded-xl shadow-2xl p-8 w-full max-w-lg relative animate-fadeIn border border-gray-200">
         <button
           className="absolute top-4 right-4 text-2xl font-bold text-gray-500 hover:text-red-500"
           onClick={onClose}

@@ -27,6 +27,7 @@ function App() {
           <Route path="/favorites" element={<Favorites />} /> {/* <-- Add this line */}
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          
         </Routes>
       </Router>
     </AuthProvider>
