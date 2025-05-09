@@ -11,7 +11,7 @@ const Register = () => {
     const result = await registerUser(formData);
     if (result.userId) { // Check for userId as in your backend response
       alert("Registration successful!");
-      navigate("/login");
+      navigate("/");
     } else {
       alert(result.message || "Registration failed");
     }

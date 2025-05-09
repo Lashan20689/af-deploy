@@ -1,4 +1,3 @@
-// src/pages/Login.jsx
 import React, { useState, useContext } from "react";
 import { loginUser } from "../api/authApi";
 import { AuthContext } from "../context/authContext";
@@ -14,9 +13,9 @@ const Login = () => {
     e.preventDefault();
     const result = await loginUser(formData);
     if (result.token) {
-      setUser(result.user);
       localStorage.setItem("token", result.token);
-      navigate("/");
+      navigate("/"); // <-- Redirect to HeroPage
+      setUser(result.user);
     } else {
       alert(result.message || "Login failed");
     }
